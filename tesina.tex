@@ -1,0 +1,117 @@
+\documentclass[12pt,a4paper,oneside]{report}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[italian]{babel}
+\usepackage[a4paper,margin=2.5cm]{geometry}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{siunitx}
+\usepackage[hidelinks]{hyperref}
+
+\title{Analisi FEM di un piede bionico}
+\author{Amos Rafael Grusovin}
+\author{Marco Libertone}
+\date{Anno accademico 2026--2027}
+
+\begin{document}
+
+\begin{titlepage}
+    \centering
+    {\Large Università degli studi di Modena e Reggio-Emilia\par}
+    \vspace{1.5cm}
+    {\large Bioingegneria per l'innovazione in medicina\par}
+    \vspace{2.5cm}
+    {\Huge\bfseries Analisi FEM di un piede bionico\par}
+    \vspace{0.5cm}
+    {\Large Eventuale sottotitolo\par}
+    \vfill
+    \begin{flushleft}
+        \textbf{Docente:} Edoardo Artioli\\[0.3cm]
+        \textbf{Studente:} Amos Rafael Grusovin\\
+        \textbf{Studente:} Marco Libertone
+    \end{flushleft}
+    \vfill
+    {\large Anno accademico 2026--2027\par}
+\end{titlepage}
+
+\pagenumbering{roman}
+
+\chapter*{Abstract}
+\addcontentsline{toc}{chapter}{Abstract}
+Riassumere qui l'argomento, gli obiettivi, il metodo seguito e i risultati
+principali della tesina. L'abstract dovrebbe essere breve e comprensibile
+anche senza aver letto il resto del documento.
+
+\chapter*{Ringraziamenti}
+\addcontentsline{toc}{chapter}{Ringraziamenti}
+Inserire qui eventuali ringraziamenti, oppure rimuovere questa sezione.
+
+\tableofcontents
+\clearpage
+\renewcommand{\thepage}{\arabic{page}}
+
+\chapter{Introduzione}
+\section{Contesto}
+Presentare il tema e il contesto in cui si inserisce il lavoro.
+
+\section{Obiettivi e struttura della tesina}
+Descrivere gli obiettivi e anticipare brevemente l'organizzazione dei capitoli.
+
+\chapter{Stato dell'arte}
+Riassumere le conoscenze e le soluzioni esistenti, citando le fonti utilizzate
+come nell'esempio \cite{riferimento-esempio}.
+
+\chapter{Progettazione e metodologia}
+\section{Requisiti}
+Elencare i requisiti funzionali e i vincoli del progetto.
+
+\section{Metodo di lavoro}
+Descrivere gli strumenti, le ipotesi e le fasi seguite.
+
+\chapter{Modellazione e analisi}
+\section{Modello}
+Descrivere il modello sviluppato e le sue principali caratteristiche.
+
+\section{Verifiche}
+Riportare le verifiche svolte, le condizioni al contorno e le ipotesi adottate.
+Per esempio, una grandezza può essere espressa con unità di misura:
+\[
+    F = m\,a \qquad [F] = \si{\newton}.
+\]
+
+\chapter{Risultati}
+Presentare i risultati in modo ordinato e commentarli.
+
+\begin{table}[htbp]
+    \centering
+    \caption{Esempio di tabella dei risultati.}
+    \label{tab:risultati}
+    \begin{tabular}{lcc}
+        \toprule
+        Caso & Valore iniziale & Valore finale \\
+        \midrule
+        Caso A & -- & -- \\
+        Caso B & -- & -- \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\chapter{Discussione}
+Interpretare i risultati, confrontarli con gli obiettivi e indicare eventuali
+limiti del lavoro.
+
+\chapter{Conclusioni e sviluppi futuri}
+Riassumere i risultati principali e proporre possibili sviluppi futuri.
+
+\appendix
+\chapter{Materiale supplementare}
+Inserire, se necessario, dettagli tecnici, calcoli o dati aggiuntivi.
+
+\begin{thebibliography}{9}
+    \bibitem{riferimento-esempio}
+    Cognome, N., \emph{Titolo del testo o dell'articolo},
+    Editore o rivista, anno.
+\end{thebibliography}
+
+\end{document}
